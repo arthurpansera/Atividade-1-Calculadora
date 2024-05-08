@@ -38,7 +38,7 @@ def calculadora():
                 print(f"Resultado: {multiplicacao(num1, num2)}")
             elif escolha == '4':
                 while num2 == 0:
-                    print("Opção inválida...")
+                    print("Opção inválida! Impossível dividir por 0!")
                     num1 = float(input("Digite o primeiro número: "))
                     num2 = float(input("Digite o segundo número: "))
                 print(f"Resultado: {divisao(num1, num2)}")
