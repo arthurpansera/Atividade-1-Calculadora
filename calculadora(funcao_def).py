@@ -37,6 +37,10 @@ def calculadora():
             elif escolha == '3':
                 print(f"Resultado: {multiplicacao(num1, num2)}")
             elif escolha == '4':
+                while num2 == 0:
+                    print("Opção inválida...")
+                    num1 = float(input("Digite o primeiro número: "))
+                    num2 = float(input("Digite o segundo número: "))
                 print(f"Resultado: {divisao(num1, num2)}")
         elif escolha == '5':
             print("Saindo...")
